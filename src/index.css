@@ -1,20 +1,8 @@
-/* .linl-div{
-
-}
-.link-div ul{
-   
-    
-} */
-.link-div ul li{
-    list-style-type: none;
-    display: inline-block;
-    margin:3px 10px;
-    padding: 7px 10px;
-    
+.content {
+    padding:10px 250px;
+    border-radius: 15%;
 }
 
- ul li NavLink:hover{
-    text-decoration: underline;
-   
-    
+*{
+    background-color: rgb(184, 160, 160);
 }

@@ -1,26 +1,97 @@
-export default function validateInfo(values) {
-  let errors = {};
+const bioData = [
+    {
+        id:0,
+        title:"image no 1",
+        image:'./images/breakfast.jpg',
+        catagory:"breakfast",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae."
+    },
 
-  if (!values.username.trim()) {
-    errors.username = 'Username required';
-  }
+    {
+        id:1,
+        title:"image no 1",
+        image:'./images/breakfast2.png',
+        catagory:"breakfast",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae."
+    },
 
+    {
+        id:3,
+        title:"image no 1",
+        image:'./images/dinner1.jpg',
+        catagory:"dinner",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae."
+    },
 
-  if (!values.email) {
-    errors.email = 'Email required';
-  } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-    errors.email = 'Email address is invalid';
-  }
-  if (!values.password) {
-    errors.password = 'Password is required';
-  } else if (values.password.length < 6) {
-    errors.password = 'Password needs to be 6 characters or more';
-  }
+    {
+        id:4,
+        title:"image no 1",
+        image:'./images/dinner2.jpg',
+        catagory:"dinner",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae."
+    },
 
-  if (!values.password2) {
-    errors.password2 = 'Password is required';
-  } else if (values.password2 !== values.password) {
-    errors.password2 = 'Passwords do not match';
-  }
-  return errors;
-}
+    {
+        id:5,
+        title:"image no 1",
+        image:'./images/dinner3.jpg',
+        catagory:"dinner",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae."
+    },
+
+    {
+        id:6,
+        title:"image no 1",
+        image:'./images/dinner4jpg.jpg',
+        catagory:"dinner",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae."
+    },
+
+    {
+        id:7,
+        title:"image no 1",
+        image:'./images/dinner5.jpg',
+        catagory:"dinner",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae."
+    },
+
+    {
+        id:8,
+        title:"image no 1",
+        image:'./images/evening1.jpg',
+        catagory:"evening",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae."
+    },
+
+    {
+        id:9,
+        title:"image no 1",
+        image:'./images/evening2.jpg',
+        catagory:"evening",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae."
+    },
+
+    {
+        id:9,
+        title:"image no 1",
+        image:'./images/evening2.jpg',
+        catagory:"evening",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae."
+    },
+    {
+        id:10,
+        title:"image no 1",
+        image:'./images/lunch.jpg',
+        catagory:"lunch",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae."
+    },
+    {
+        id:11,
+        title:"image no 1",
+        image:'./images/lunch1.jpg',
+        catagory:"lunch",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae."
+    }
+
+]
+export default bioData;
