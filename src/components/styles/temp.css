@@ -1,0 +1,198 @@
+.link-div ul{
+    list-style: none;
+    display: flex;
+    margin-left: 200px;
+
+}
+
+.link-div ul li{
+    font-size: 20px;
+    padding: 5px 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.link-div ul li .nav{
+    text-decoration: none;
+    color: rgb(244, 248, 248);
+    padding-top: 6px;
+   
+    
+}
+.link-div ul li .nav:hover{
+    text-decoration: underline;
+    
+   
+
+}
+.header h3{
+    margin-left: -100px;
+    padding-top: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    text-shadow: 5px 10px 5px rgb(243, 111, 111);
+}
+
+
+.container{
+    height: 100%;
+   
+   
+    
+
+}
+.div{
+    display: flex;
+    margin-left: 100px;
+    justify-content: center;
+   
+    
+}
+.head{
+    color:rgb(65, 65, 4)
+
+}
+.demo1{
+    margin-left: 300px;
+    color:rgb(121, 121, 11);
+
+}
+.demo2{
+    margin-left: 300px;
+    color:rgb(121, 121, 11);
+}
+h3.demo2 span{
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 8px 8px 5px rgb(240, 230, 216);
+}
+.hero>*{
+    flex:1;
+}
+.hero1{
+    margin-left: 50px;
+}
+.txt::before{
+    content: "";
+    height: 2px;
+    width: 70px;
+    background-color: rgb(47, 19, 124);
+    position: absolute;
+    top:25px;
+    left:380px;
+}
+
+
+.txt::after{
+    content: "";
+    height: 2px;
+    width: 70px;
+    background-color: rgb(47, 19, 124);
+    position: absolute;
+    top:30px;
+    left:670px;
+}
+.txt{
+    background-color: rgb(94, 197, 83);
+    color: wheat;
+    font-style: italic;
+    position: relative;
+}
+.cards{
+    transition:  2s;
+    transition-timing-function: ease-in-out;
+}
+.cards:hover{
+    transform: scale(1);
+}
+
+.service-ratio{
+    box-sizing: border-box;
+
+}
+.service-ratio ul li{
+    list-style: none;
+    padding:20px 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+
+}
+.service-ratio ul li::before{
+    content: '';
+    width: 100%;
+    height: 15px;
+    background-color: rgb(65, 81, 104);
+    position: absolute;
+    top:40px;
+    left:0;
+    border-radius: 10px;
+
+}
+.service-ratio ul li::after{
+    content: '';
+    width: 0%;
+    height: 15px;
+    background-color: rgb(176, 199, 157);
+    position: absolute;
+    top:40px;
+    left:0;
+    border-radius: 10px;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+ .iphone::after{
+    animation-name: iphone;
+}
+@keyframes iphone{
+    to{
+        width: 80%;
+    }
+}
+
+.samsung::after{
+    animation-name: samsung;
+}
+@keyframes samsung{
+    to{
+        width: 70%;
+    }
+}
+
+.xiomi::after{
+    animation-name: xiomi;
+}
+@keyframes xiomi{
+    to{
+        width: 50%;
+    }
+}
+.oppo::after{
+    animation-name: oppo;
+}
+@keyframes oppo{
+    to{
+        width: 40%;
+    }
+}
+
+.vivo::after{
+    animation-name: vivo;
+}
+@keyframes vivo{
+    to{
+        width: 30%;
+    }
+}
+
+.btn1{
+    padding:0px 350px;
+}
+.col{
+    transition:2s;
+}
+.col:hover{
+    transform:scale(1.1);
+}

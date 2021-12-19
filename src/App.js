@@ -1,32 +1,42 @@
 import React from 'react'
-import FormSignup from './components/FormSignup'
-import Result from './components/Result'
-import bioData from './components/validateInfo'
+import Home from './components/Home';
+import {Routes,Route,Navigate} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Services from './components/Services';
+import Information from './components/Information';
+import Contact from './components/Contact';
+import './components/styles/temp.css';
+import menuData from './components/Menu'
 
-const allCatData = [...new Set(bioData.map((currElm)=>currElm.catagory)),"ALL"]
+const allData = [...new Set(menuData.map((Elm)=>Elm.catagory)),"All"]
 const App = () => {
- const[item,setItem] = React.useState(bioData);
- const[input,setInput] = React.useState(allCatData);
- const filterItem=(catagory)=>{
-   if(catagory === "ALL"){
-     setItem(bioData)
-     return;
-   }
-   const updateItem = bioData.filter((Elm,index)=>{
+  const[input,setInput] = React.useState(allData);
+  const[catItem,setCatItem] = React.useState(menuData);
+  const filterItem=((catagory)=>{
+    if(catagory==="All"){
+      setCatItem(menuData);
+      return;
+    }
+    const updateItem = menuData.filter((currVal)=>{
+      return currVal.catagory === catagory;
+    })
+    setCatItem(updateItem);
 
-    return Elm.catagory === catagory;
-   })
-   setItem(updateItem);
- }
+  })
   return (
-    <div>
-    
-    <h1 className='text-center'>Photo Gallary</h1>
-     <hr />
-   
-     <FormSignup  input = {input} filterItem={filterItem}/>  
-     <Result className="mt-5" item = {item} /> 
-    </div>
+    <>
+    <Navbar/>
+    <Routes>
+    <Route path = "/*" element={<Navigate to ="/home"/>}/>
+    <Route path = "/home" element={<Home/>}/>
+    <Route path = "/about" element={<About/>}/>
+    <Route path = "/services" element={<Services input={input} catItem={catItem} filterItem={filterItem}/>}/>
+    <Route path = "/information" element={<Information/>}/>
+    <Route path = "/contact" element={<Contact/>}/>
+    </Routes>
+  
+    </>
   )
 }
 

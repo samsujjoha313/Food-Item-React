@@ -1,33 +1,55 @@
-import React from 'react';
+const bioData = [
+  {
 
-function Result({item}) {
-  return (
-    <>
-    <div className="container">
-    <div className="row">
-    {
-      item.map((Elm)=>{
-        return(
-    <div className="col col-sm-11 col-md-4 col-lg-4">
-   <div className="card">
-   <div className="card-image"><img src={Elm.image} alt="blank" style={{height:200,width:350}} /></div>
-   <div className="card-body">
-   <h2>{Elm.title}</h2>
-   <h3>{Elm.catagory}</h3>
-   
-   <p>{Elm.description}</p>
-   </div>
-   
-   </div>    
-    </div>  
-        )
-      })
-    }
-    </div>
-    </div>
-    
-    </>
-  );
-}
+    id:0,
+    image:"images/photo1.jpg",
+    title:"Version z23syg",
+    catagory:"iphone",
+    desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat sunt debitis, neque magni eligendi."
+  },
+  {
 
-export default Result;
+    id:1,
+    image:"images/photo2.jpg",
+    title:"Version z23syg",
+    catagory:"iphone",
+    desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat sunt debitis, neque magni eligendi."
+  },
+  {
+
+    id:2,
+    image:"images/photo3.jpg",
+    title:"Version z23syg",
+    catagory:"iphone",
+    desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat sunt debitis, neque magni eligendi."
+  },
+  {
+
+    id:3,
+    image:"images/photo4.jpg",
+    title:"Version z23syg",
+    catagory:"iphone",
+    desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat sunt debitis, neque magni eligendi."
+  },
+  {
+
+    id:4,
+    image:"images/photo5.jpg",
+    title:"Version z23syg",
+    catagory:"iphone",
+    desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat sunt debitis, neque magni eligendi."
+  },
+  {
+
+    id:5,
+    image:"images/photo6.jpg",
+    title:"Version z23syg",
+    catagory:"iphone",
+    desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat sunt debitis, neque magni eligendi."
+  }
+  
+
+  
+
+]
+export default bioData

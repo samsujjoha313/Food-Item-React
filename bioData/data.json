@@ -1,0 +1,49 @@
+{
+  "student": [
+    {
+      "id": 0,
+      "name": "joha",
+      "email": "sgj@gmail.com",
+      "phone": 576576
+    },
+    {
+      "id": 1,
+      "name": "farhan",
+      "email": "sgj@gmail.com",
+      "phone": 3445556
+    },
+    {
+      "id": 2,
+      "name": "joha",
+      "email": "sgj@gmail.com",
+      "phone": 3333
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "name": "newspaper",
+      "email": "joha1998diu@gmail.com",
+      "phone": "54654657",
+      "id": 10
+    }
+  ]
+}
